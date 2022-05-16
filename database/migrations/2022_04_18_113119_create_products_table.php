@@ -19,6 +19,8 @@ return new class extends Migration
             $table->double ('price',8,2)->nullable();
             $table->string ('unit')->nullable();
             $table->integer ('quantity')->nullable();
+            $table->bigInteger('Catagory_id');
+
             $table->timestamps();
         });
     }

@@ -14,4 +14,8 @@ class product extends Model
         'quantity',
         'price',
     ];
+public function Catagories()
+{
+return  $this->belonsTo(Catagory::class);
 }
+ }
